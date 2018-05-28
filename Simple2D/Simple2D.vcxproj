@@ -1,0 +1,351 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{38459183-4A4D-4CF0-81F2-0E31E3205C94}</ProjectGuid>
+    <RootNamespace>Simple2D</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LibraryPath>$(DXSDK_DIR)Lib\x86;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(DXSDK_DIR)Include;$(IncludePath)</IncludePath>
+    <IntDir>..\..\$(Configuration)\</IntDir>
+    <OutDir>$(SolutionDir)..\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <BrowseInformation>true</BrowseInformation>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(DXSDK_DIR)Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalManifestDependencies>d3dx9.lib;%(AdditionalManifestDependencies)</AdditionalManifestDependencies>
+    </Link>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="Simple2d" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="s2Audio\S2AudioSystem.cpp" />
+    <ClCompile Include="s2Audio\S2NullAudio.cpp" />
+    <ClCompile Include="s2Base\sClock\SHighPrecClock.cpp" />
+    <ClCompile Include="s2Base\sDispatch\SDispatcher.cpp" />
+    <ClCompile Include="s2Base\sDispatch\SEvent.cpp" />
+    <ClCompile Include="s2Base\sDispatch\SEventFlag.cpp" />
+    <ClCompile Include="s2Base\sDispatch\SEventListener.cpp" />
+    <ClCompile Include="s2Base\sLang\SConverer.cpp" />
+    <ClCompile Include="s2Base\sLang\SValue.cpp" />
+    <ClCompile Include="s2Base\sLang\SWrapper.cpp" />
+    <ClCompile Include="s2Base\sMath\SMath.cpp" />
+    <ClCompile Include="s2Base\sMemory\SAutoReleasePool.cpp" />
+    <ClCompile Include="s2Base\sMemory\SAutoReleasePoolManager.cpp" />
+    <ClCompile Include="s2Base\sMemory\SPoolManager.cpp" />
+    <ClCompile Include="s2Base\sMemory\SReference.cpp" />
+    <ClCompile Include="s2Base\sParse\SHash.cpp" />
+    <ClCompile Include="s2Base\sParse\SMD5.cpp" />
+    <ClCompile Include="s2Base\sParse\SUID.cpp" />
+    <ClCompile Include="s2Base\sSchedule\SScheduler.cpp" />
+    <ClCompile Include="s2Base\sSchedule\STimer.cpp" />
+    <ClCompile Include="s2Base\sSchedule\STimerManager.cpp" />
+    <ClCompile Include="s2Base\sThread\SThread.cpp" />
+    <ClCompile Include="s2Core\S2Node.cpp" />
+    <ClCompile Include="s2Core\S2Object.cpp" />
+    <ClCompile Include="s2Engine\S2AlgebraOperation.cpp" />
+    <ClCompile Include="s2Engine\S2Application.cpp" />
+    <ClCompile Include="s2Engine\S2Engine.cpp" />
+    <ClCompile Include="s2Engine\S2SteadyFramePulser.cpp" />
+    <ClCompile Include="s2Event\S2CommandEvent.cpp" />
+    <ClCompile Include="s2Event\S2CommandEventListener.cpp" />
+    <ClCompile Include="s2Event\S2CustomEvent.cpp" />
+    <ClCompile Include="s2Event\S2CustomEventListener.cpp" />
+    <ClCompile Include="s2Event\S2EventTable.cpp" />
+    <ClCompile Include="s2Event\S2EventUtil.cpp" />
+    <ClCompile Include="s2Event\S2MouseEvent.cpp" />
+    <ClCompile Include="s2Event\S2MouseEventListener.cpp" />
+    <ClCompile Include="s2Platform\Win32\API\Clock\S2FrequencyClock.cpp" />
+    <ClCompile Include="s2Platform\Win32\Application\S2Window.cpp" />
+    <ClCompile Include="s2Platform\Win32\Audio\S2MCIAudio.cpp" />
+    <ClCompile Include="s2Platform\Win32\HID\S2D3DJoypad.cpp" />
+    <ClCompile Include="s2Platform\Win32\HID\S2D3DKeyboard.cpp" />
+    <ClCompile Include="s2Platform\Win32\HID\S2D3DMouse.cpp" />
+    <ClCompile Include="s2Platform\Win32\HID\S2WinKeyboard.cpp" />
+    <ClCompile Include="s2Platform\Win32\HID\S2WinMouse.cpp" />
+    <ClCompile Include="s2Platform\Win32\Render\DX9\S2DXAlgebraOperation.cpp" />
+    <ClCompile Include="s2Render\S2Device.cpp" />
+    <ClCompile Include="s2Render\S2Effect.cpp" />
+    <ClCompile Include="s2Render\S2Font.cpp" />
+    <ClCompile Include="s2Render\S2Graphics.cpp" />
+    <ClCompile Include="s2Render\S2Painter.cpp" />
+    <ClCompile Include="s2Render\S2Renderer.cpp" />
+    <ClCompile Include="s2Render\S2RenderSystem.cpp" />
+    <ClCompile Include="s2Render\S2Shader.cpp" />
+    <ClCompile Include="s2Render\S2StencilBuffer.cpp" />
+    <ClCompile Include="s2Render\S2Texture.cpp" />
+    <ClCompile Include="s2Render\S2TexturePool.cpp" />
+    <ClCompile Include="s2Render\S2View.cpp" />
+    <ClCompile Include="s2Scene\Action\S2Action.cpp" />
+    <ClCompile Include="s2Scene\Action\S2ActionInstant.cpp" />
+    <ClCompile Include="s2Scene\Action\S2ActionInterval.cpp" />
+    <ClCompile Include="s2Scene\Action\S2ActionRepeat.cpp" />
+    <ClCompile Include="s2Scene\Action\S2Animate.cpp" />
+    <ClCompile Include="s2Scene\Action\S2FiniteTimeAction.cpp" />
+    <ClCompile Include="s2Scene\Action\S2ForeverAction.cpp" />
+    <ClCompile Include="s2Scene\Action\S2MoveTo.cpp" />
+    <ClCompile Include="s2Scene\Action\S2SequenceAction.cpp" />
+    <ClCompile Include="s2Scene\S2Camera.cpp" />
+    <ClCompile Include="s2Scene\S2Director.cpp" />
+    <ClCompile Include="s2Scene\S2Scene.cpp" />
+    <ClCompile Include="s2Scene\S2SceneNode.cpp" />
+    <ClCompile Include="s2Scene\S2Sprite.cpp" />
+    <ClCompile Include="s2Scene\S2SpriteAnimation.cpp" />
+    <ClCompile Include="s2Scene\S2SpriteFrame.cpp" />
+    <ClCompile Include="s2Scene\S2SpriteFrameCache.cpp" />
+    <ClCompile Include="s2Scene\S2TextureCache.cpp" />
+    <ClCompile Include="s2Util\S2DebugUtil.cpp" />
+    <ClCompile Include="s2Util\SXDXUtil.cpp" />
+    <ClCompile Include="s2HID\S2Joypad.cpp" />
+    <ClCompile Include="s2HID\S2Keyboard.cpp" />
+    <ClCompile Include="s2HID\S2Mouse.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="s2Audio\S2AudioSystem.h" />
+    <ClInclude Include="s2Audio\S2BaseAudio.h" />
+    <ClInclude Include="s2Audio\S2GlobalAudio.h" />
+    <ClInclude Include="s2Audio\S2NullAudio.h" />
+    <ClInclude Include="s2Base\sClock\SHighPrecClock.h" />
+    <ClInclude Include="s2Base\sDebug\SAssert.h" />
+    <ClInclude Include="s2Base\sDebug\SDebug.h" />
+    <ClInclude Include="s2Base\sDebug\SLog.h" />
+    <ClInclude Include="s2Base\sDispatch\SDispatcher.h" />
+    <ClInclude Include="s2Base\sDispatch\SEvent.h" />
+    <ClInclude Include="s2Base\sDispatch\SEventFlag.h" />
+    <ClInclude Include="s2Base\sDispatch\SEventListener.h" />
+    <ClInclude Include="s2Base\sException\SError.h" />
+    <ClInclude Include="s2Base\sException\SException.h" />
+    <ClInclude Include="s2Base\sException\SThrowable.h" />
+    <ClInclude Include="s2Base\sLang\SConverer.h" />
+    <ClInclude Include="s2Base\sLang\SPriorityList.hpp" />
+    <ClInclude Include="s2Base\sLang\SThreadSafeQueue.hpp" />
+    <ClInclude Include="s2Base\sLang\SValue.h" />
+    <ClInclude Include="s2Base\sLang\SVariant.hpp" />
+    <ClInclude Include="s2Base\sLang\SWrapper.h" />
+    <ClInclude Include="s2Base\sMath\SBaseMatrix.hpp" />
+    <ClInclude Include="s2Base\sMath\SBasePoint2.hpp" />
+    <ClInclude Include="s2Base\sMath\SBasePoint3.hpp" />
+    <ClInclude Include="s2Base\sMath\SBaseQuaternion.hpp" />
+    <ClInclude Include="s2Base\sMath\SBaseRect.hpp" />
+    <ClInclude Include="s2Base\sMath\SBaseRgn.hpp" />
+    <ClInclude Include="s2Base\sMath\SBaseSize.hpp" />
+    <ClInclude Include="s2Base\sMath\SBaseVector2.hpp" />
+    <ClInclude Include="s2Base\sMath\SBaseVector3.hpp" />
+    <ClInclude Include="s2Base\sMath\SBaseVector4.hpp" />
+    <ClInclude Include="s2Base\sMath\SMath.h" />
+    <ClInclude Include="s2Base\sMath\SMathX.hpp" />
+    <ClInclude Include="s2Base\sMemory\SAutoReleasePool.h" />
+    <ClInclude Include="s2Base\sMemory\SAutoReleasePoolManager.h" />
+    <ClInclude Include="s2Base\sMemory\SObjectPool.hpp" />
+    <ClInclude Include="s2Base\sMemory\SPool.h" />
+    <ClInclude Include="s2Base\sMemory\SPoolManager.h" />
+    <ClInclude Include="s2Base\sMemory\SReference.h" />
+    <ClInclude Include="s2Base\sMemory\SReferencePool.hpp" />
+    <ClInclude Include="s2Base\sMemory\SSharedPtr.hpp" />
+    <ClInclude Include="s2Base\sParse\SHash.h" />
+    <ClInclude Include="s2Base\sParse\SHash.hpp" />
+    <ClInclude Include="s2Base\sParse\SMD5.h" />
+    <ClInclude Include="s2Base\sParse\SSHA256.hpp" />
+    <ClInclude Include="s2Base\sParse\SUID.h" />
+    <ClInclude Include="s2Base\sPattern\SObserver.hpp" />
+    <ClInclude Include="s2Base\sPattern\SSingleton.hpp" />
+    <ClInclude Include="s2Base\sPattern\SSingletonTemp.hpp" />
+    <ClInclude Include="s2Base\sPattern\SSubject.hpp" />
+    <ClInclude Include="s2Base\sSchedule\SDelayer.h" />
+    <ClInclude Include="s2Base\sSchedule\SScheduler.h" />
+    <ClInclude Include="s2Base\sSchedule\STask.h" />
+    <ClInclude Include="s2Base\sSchedule\STimer.h" />
+    <ClInclude Include="s2Base\sSchedule\STimerManager.h" />
+    <ClInclude Include="s2Base\sThread\SAsyncTask.hpp" />
+    <ClInclude Include="s2Base\sThread\SRunnable.h" />
+    <ClInclude Include="s2Base\sThread\SThread.h" />
+    <ClInclude Include="s2Component\S2ActionComp.hpp" />
+    <ClInclude Include="s2Component\S2EventDispatchComp.hpp" />
+    <ClInclude Include="s2Component\S2FrameControllerComp.hpp" />
+    <ClInclude Include="s2Component\S2RenderComp.hpp" />
+    <ClInclude Include="s2Component\S2ShcduleComp.hpp" />
+    <ClInclude Include="s2Core\S2Wrapper.h" />
+    <ClInclude Include="s2Core\Lang\S2String.h" />
+    <ClInclude Include="s2Core\S2Global.h" />
+    <ClInclude Include="s2Core\S2Interface.hpp" />
+    <ClInclude Include="s2Core\S2Macro.h" />
+    <ClInclude Include="s2Core\S2Node.h" />
+    <ClInclude Include="s2Core\S2Object.h" />
+    <ClInclude Include="s2Core\S2Singleton.hpp" />
+    <ClInclude Include="s2Core\S2SmartPtr.h" />
+    <ClInclude Include="s2Core\S2SmartPtr.hpp" />
+    <ClInclude Include="s2Core\S2Type.h" />
+    <ClInclude Include="s2Engine\S2AlgebraOperation.h" />
+    <ClInclude Include="s2Engine\S2Application.h" />
+    <ClInclude Include="s2Engine\S2Engine.h" />
+    <ClInclude Include="s2Engine\S2ResourceManager.h" />
+    <ClInclude Include="s2Engine\S2SteadyFramePulser.h" />
+    <ClInclude Include="s2Event\S2BaseEvent.h" />
+    <ClInclude Include="s2Event\S2BaseEventListener.h" />
+    <ClInclude Include="s2Event\S2CommandEvent.h" />
+    <ClInclude Include="s2Event\S2CommandEventListener.h" />
+    <ClInclude Include="s2Event\S2CustomEvent.h" />
+    <ClInclude Include="s2Event\S2CustomEventListener.h" />
+    <ClInclude Include="s2Event\S2EventTable.h" />
+    <ClInclude Include="s2Event\S2EventUtil.h" />
+    <ClInclude Include="s2Event\S2JoypadEvent.h" />
+    <ClInclude Include="s2Event\S2JoypadEventListener.h" />
+    <ClInclude Include="s2Event\S2KeyboardEvent.h" />
+    <ClInclude Include="s2Event\S2KeyboardEventListener.h" />
+    <ClInclude Include="s2Event\S2MouseEvent.h" />
+    <ClInclude Include="s2Event\S2MouseEventListener.h" />
+    <ClInclude Include="s2GUI\S2Button.h" />
+    <ClInclude Include="s2GUI\S2ButtonStyle.h" />
+    <ClInclude Include="s2GUI\S2Control.h" />
+    <ClInclude Include="s2GUI\S2Image.h" />
+    <ClInclude Include="s2GUI\S2Label.h" />
+    <ClInclude Include="s2GUI\S2LabelStyle.h" />
+    <ClInclude Include="s2GUI\S2LabelTTF.h" />
+    <ClInclude Include="s2GUI\S2Picture.h" />
+    <ClInclude Include="s2GUI\S2Style.h" />
+    <ClInclude Include="s2GUI\S2UIManager.h" />
+    <ClInclude Include="s2GUI\S2UINode.h" />
+    <ClInclude Include="s2GUI\S2Widget.h" />
+    <ClInclude Include="s2GUI\S2Window.h" />
+    <ClInclude Include="s2Platform\Win32\API\Clock\S2FrequencyClock.h" />
+    <ClInclude Include="s2Platform\Win32\Application\S2Window.h" />
+    <ClInclude Include="s2Platform\Win32\Application\S2WindowActivityListener.h" />
+    <ClInclude Include="s2Platform\Win32\Application\S2WindowInputListener.h" />
+    <ClInclude Include="s2Platform\Win32\Audio\S2MCIAudio.h" />
+    <ClInclude Include="s2Platform\Win32\HID\S2D3DJoypad.h" />
+    <ClInclude Include="s2Platform\Win32\HID\S2D3DKeyboard.h" />
+    <ClInclude Include="s2Platform\Win32\HID\S2D3DMouse.h" />
+    <ClInclude Include="s2Platform\Win32\HID\S2WinKeyboard.h" />
+    <ClInclude Include="s2Platform\Win32\HID\S2WinMouse.h" />
+    <ClInclude Include="s2Platform\Win32\Render\DX9\S2DXAlgebraOperation.h" />
+    <ClInclude Include="s2Platform\Win32\Render\DX9\S2DXGlobal.h" />
+    <ClInclude Include="s2Protocol\Application\S2ApplicationProtocol.h" />
+    <ClInclude Include="s2Protocol\Audio\S2AudioProtocol.h" />
+    <ClInclude Include="s2Protocol\Render\S2AlgebraOperationProtocol.h" />
+    <ClInclude Include="s2Protocol\Render\S2DeviceProtocol.h" />
+    <ClInclude Include="s2Protocol\Render\S2RendererProtocol.h" />
+    <ClInclude Include="s2Protocol\Render\S2ShaderProtocol.h" />
+    <ClInclude Include="s2Protocol\Render\S2TextureProtocal.h" />
+    <ClInclude Include="s2Protocol\Render\S2ViewProtocol.h" />
+    <ClInclude Include="s2Protocol\S2AudioProtocol.h" />
+    <ClInclude Include="s2Protocol\S2CoreProtocol.h" />
+    <ClInclude Include="s2Protocol\S2EngineProtocol.h" />
+    <ClInclude Include="s2Protocol\S2HIDProtocol.h" />
+    <ClInclude Include="s2Protocol\S2RenderProtocol.h" />
+    <ClInclude Include="s2Render\S2Device.h" />
+    <ClInclude Include="s2Render\S2Effect.h" />
+    <ClInclude Include="s2Render\S2Font.h" />
+    <ClInclude Include="s2Render\S2Graphics.h" />
+    <ClInclude Include="s2Render\S2Painter.h" />
+    <ClInclude Include="s2Render\S2Renderer.h" />
+    <ClInclude Include="s2Render\S2RenderSystem.h" />
+    <ClInclude Include="s2Render\S2Shader.h" />
+    <ClInclude Include="s2Render\S2StencilBuffer.h" />
+    <ClInclude Include="s2Render\S2Texture.h" />
+    <ClInclude Include="s2Render\S2TexturePool.h" />
+    <ClInclude Include="s2Render\S2View.h" />
+    <ClInclude Include="s2Scene\Action\S2Action.h" />
+    <ClInclude Include="s2Scene\Action\S2ActionInstant.h" />
+    <ClInclude Include="s2Scene\Action\S2ActionInterval.h" />
+    <ClInclude Include="s2Scene\Action\S2ActionRepeat.h" />
+    <ClInclude Include="s2Scene\Action\S2Animate.h" />
+    <ClInclude Include="s2Scene\Action\S2CustomAction.h" />
+    <ClInclude Include="s2Scene\Action\S2FiniteTimeAction.h" />
+    <ClInclude Include="s2Scene\Action\S2ForeverAction.h" />
+    <ClInclude Include="s2Scene\Action\S2MoveTo.h" />
+    <ClInclude Include="s2Scene\Action\S2SequenceAction.h" />
+    <ClInclude Include="s2Scene\S2Camera.h" />
+    <ClInclude Include="s2Scene\S2Director.h" />
+    <ClInclude Include="s2Scene\S2Layer.h" />
+    <ClInclude Include="s2Scene\S2Scene.h" />
+    <ClInclude Include="s2Scene\S2SceneNode.h" />
+    <ClInclude Include="s2Scene\S2SceneSystem.h" />
+    <ClInclude Include="s2Scene\S2Sprite.h" />
+    <ClInclude Include="s2Scene\S2SpriteAnimation.h" />
+    <ClInclude Include="s2Scene\S2SpriteFrame.h" />
+    <ClInclude Include="s2Scene\S2SpriteFrameCache.h" />
+    <ClInclude Include="s2Scene\S2TextureCache.h" />
+    <ClInclude Include="s2Scene\S2TransitionFade.h" />
+    <ClInclude Include="s2Scene\S2TransitionScene.h" />
+    <ClInclude Include="s2UI\S2Button.h" />
+    <ClInclude Include="s2UI\S2ButtonStyle.h" />
+    <ClInclude Include="s2UI\S2Control.h" />
+    <ClInclude Include="s2UI\S2Image.h" />
+    <ClInclude Include="s2UI\S2Label.h" />
+    <ClInclude Include="s2UI\S2LabelStyle.h" />
+    <ClInclude Include="s2UI\S2LabelTTF.h" />
+    <ClInclude Include="s2UI\S2Style.h" />
+    <ClInclude Include="s2UI\S2UIManager.h" />
+    <ClInclude Include="s2UI\S2UINode.h" />
+    <ClInclude Include="s2UI\S2Widget.h" />
+    <ClInclude Include="s2UI\S2Window.h" />
+    <ClInclude Include="s2Util\S2DebugUtil.h" />
+    <ClInclude Include="s2Util\SXDXUtil.h" />
+    <ClInclude Include="s2Util\S2StringUtil.h" />
+    <ClInclude Include="s2HID\S2Joypad.h" />
+    <ClInclude Include="s2HID\S2Keyboard.h" />
+    <ClInclude Include="s2HID\S2Mouse.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Simple2D", "Simple2D\Simple2D.vcxproj", "{38459183-4A4D-4CF0-81F2-0E31E3205C94}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "项目文档", "项目文档", "{36ACA00D-776D-45F9-B347-0E793FECFBC6}"
+	ProjectSection(SolutionItems) = preProject
+		开发者日记.txt = 开发者日记.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Demo", "Demo", "{8D9D8279-D45A-463D-8622-97404BA3E8C6}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Snake", "Demo\Snake\Snake.vcxproj", "{712006BF-D06D-4A11-A686-802C1977A125}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Application", "Demo\Application\Application.vcxproj", "{066D11E7-2423-46EC-B9D6-ABA3E4B6AB74}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{38459183-4A4D-4CF0-81F2-0E31E3205C94}.Debug|Win32.ActiveCfg = Debug|Win32
+		{38459183-4A4D-4CF0-81F2-0E31E3205C94}.Debug|Win32.Build.0 = Debug|Win32
+		{38459183-4A4D-4CF0-81F2-0E31E3205C94}.Release|Win32.ActiveCfg = Release|Win32
+		{38459183-4A4D-4CF0-81F2-0E31E3205C94}.Release|Win32.Build.0 = Release|Win32
+		{712006BF-D06D-4A11-A686-802C1977A125}.Debug|Win32.ActiveCfg = Debug|Win32
+		{712006BF-D06D-4A11-A686-802C1977A125}.Debug|Win32.Build.0 = Debug|Win32
+		{712006BF-D06D-4A11-A686-802C1977A125}.Release|Win32.ActiveCfg = Release|Win32
+		{712006BF-D06D-4A11-A686-802C1977A125}.Release|Win32.Build.0 = Release|Win32
+		{066D11E7-2423-46EC-B9D6-ABA3E4B6AB74}.Debug|Win32.ActiveCfg = Debug|Win32
+		{066D11E7-2423-46EC-B9D6-ABA3E4B6AB74}.Debug|Win32.Build.0 = Debug|Win32
+		{066D11E7-2423-46EC-B9D6-ABA3E4B6AB74}.Release|Win32.ActiveCfg = Release|Win32
+		{066D11E7-2423-46EC-B9D6-ABA3E4B6AB74}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{712006BF-D06D-4A11-A686-802C1977A125} = {8D9D8279-D45A-463D-8622-97404BA3E8C6}
+		{066D11E7-2423-46EC-B9D6-ABA3E4B6AB74} = {8D9D8279-D45A-463D-8622-97404BA3E8C6}
+	EndGlobalSection
+EndGlobal

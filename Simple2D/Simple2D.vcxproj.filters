@@ -1,0 +1,825 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="s2Core\S2Type.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Core\S2Macro.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Scene\S2Camera.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Audio\S2BaseAudio.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Audio\S2GlobalAudio.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Audio\S2NullAudio.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Base\sClock\SHighPrecClock.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Base\sDispatch\SDispatcher.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Base\sDispatch\SEvent.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Base\sDispatch\SEventFlag.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Base\sDispatch\SEventListener.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Base\sMath\SBaseMatrix.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Base\sMath\SBasePoint2.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Base\sMath\SBasePoint3.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Base\sMath\SBaseQuaternion.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Base\sMath\SBaseRect.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Base\sMath\SBaseRgn.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Base\sMath\SBaseSize.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Base\sMath\SBaseVector2.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Base\sMath\SBaseVector3.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Base\sMath\SBaseVector4.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Base\sMath\SMath.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Base\sMath\SMathX.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Base\sMemory\SAutoReleasePool.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Base\sMemory\SAutoReleasePoolManager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Base\sMemory\SObjectPool.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Base\sMemory\SPool.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Base\sMemory\SPoolManager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Base\sMemory\SReference.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Base\sMemory\SReferencePool.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Base\sParse\SHash.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Base\sParse\SMD5.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Base\sPattern\SObserver.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Base\sPattern\SSingleton.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Base\sPattern\SSingletonTemp.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Base\sPattern\SSubject.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Base\sSchedule\SDelayer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Base\sSchedule\SScheduler.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Base\sSchedule\STask.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Base\sSchedule\STimer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Base\sSchedule\STimerManager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Base\sThread\SAsyncTask.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Base\sThread\SRunnable.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Base\sThread\SThread.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Core\Lang\S2String.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Core\S2Macro.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Core\S2Node.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Core\S2Object.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Core\S2Type.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Event\S2CommandEvent.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Event\S2CommandEventListener.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Event\S2CustomEvent.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Event\S2CustomEventListener.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Event\S2EventTable.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Event\S2EventUtil.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Event\S2KeyboardEvent.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Event\S2KeyboardEventListener.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Event\S2MouseEvent.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Event\S2MouseEventListener.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Platform\Win32\API\Clock\S2FrequencyClock.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Platform\Win32\Application\S2Window.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Platform\Win32\Application\S2WindowActivityListener.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Platform\Win32\Application\S2WindowInputListener.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Platform\Win32\Audio\S2MCIAudio.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Protocol\Application\S2ApplicationProtocol.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Protocol\Audio\S2AudioProtocol.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Protocol\Render\S2DeviceProtocol.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Protocol\Render\S2RendererProtocol.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Protocol\Render\S2ShaderProtocol.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Protocol\Render\S2TextureProtocal.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Protocol\Render\S2ViewProtocol.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Render\S2Device.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Render\S2Effect.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Render\S2Font.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Render\S2Graphics.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Render\S2Painter.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Render\S2Renderer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Render\S2Shader.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Render\S2StencilBuffer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Render\S2Texture.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Render\S2TexturePool.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Render\S2View.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Scene\Action\S2Action.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Scene\Action\S2ActionInstant.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Scene\Action\S2ActionInterval.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Scene\Action\S2ActionRepeat.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Scene\Action\S2Animate.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Scene\Action\S2CustomAction.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Scene\Action\S2FiniteTimeAction.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Scene\Action\S2ForeverAction.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Scene\Action\S2MoveTo.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Scene\Action\S2SequenceAction.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Scene\S2Camera.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Scene\S2Director.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Scene\S2Layer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Scene\S2Scene.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Scene\S2SceneNode.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Scene\S2Sprite.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Scene\S2SpriteAnimation.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Scene\S2SpriteFrame.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Scene\S2SpriteFrameCache.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Scene\S2TextureCache.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Scene\S2TransitionFade.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Scene\S2TransitionScene.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2UI\S2Button.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2UI\S2ButtonStyle.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2UI\S2Control.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2UI\S2Image.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2UI\S2Label.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2UI\S2LabelStyle.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2UI\S2LabelTTF.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2UI\S2Style.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2UI\S2UIManager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2UI\S2UINode.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2UI\S2Widget.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2UI\S2Window.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Platform\Win32\Render\DX9\S2DXGlobal.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Core\S2Global.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Base\sParse\SHash.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Base\sParse\SSHA256.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Protocol\Render\S2AlgebraOperationProtocol.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Platform\Win32\Render\DX9\S2DXAlgebraOperation.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Base\sLang\SVariant.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Base\sLang\SPriorityList.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Base\sLang\SThreadSafeQueue.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Base\sLang\SValue.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Protocol\S2RenderProtocol.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Core\S2Interface.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Core\S2Singleton.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Protocol\S2AudioProtocol.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Protocol\S2CoreProtocol.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2GUI\S2Button.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2GUI\S2ButtonStyle.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2GUI\S2Control.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2GUI\S2Image.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2GUI\S2Label.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2GUI\S2LabelStyle.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2GUI\S2LabelTTF.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2GUI\S2Style.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2GUI\S2UIManager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2GUI\S2UINode.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2GUI\S2Widget.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2GUI\S2Window.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Base\sLang\SWrapper.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Base\sLang\SConverer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Event\S2BaseEvent.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Event\S2BaseEventListener.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Base\sMemory\SSharedPtr.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Core\S2SmartPtr.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2GUI\S2Picture.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Engine\S2Application.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Engine\S2AlgebraOperation.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Core\S2Wrapper.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Core\S2SmartPtr.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Component\S2ActionComp.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Component\S2EventDispatchComp.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Component\S2FrameControllerComp.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Component\S2RenderComp.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Component\S2ShcduleComp.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Render\S2RenderSystem.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Scene\S2SceneSystem.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Audio\S2AudioSystem.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Base\sParse\SUID.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Engine\S2Engine.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Engine\S2ResourceManager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Engine\S2SteadyFramePulser.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Util\S2StringUtil.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Util\SXDXUtil.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Util\S2DebugUtil.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Protocol\S2HIDProtocol.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Protocol\S2EngineProtocol.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Event\S2JoypadEvent.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Event\S2JoypadEventListener.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Platform\Win32\HID\S2D3DKeyboard.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Platform\Win32\HID\S2D3DMouse.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Platform\Win32\HID\S2WinKeyboard.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Platform\Win32\HID\S2WinMouse.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Platform\Win32\HID\S2D3DJoypad.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Base\sDebug\SAssert.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Base\sDebug\SDebug.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Base\sDebug\SLog.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Base\sException\SError.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Base\sException\SException.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2Base\sException\SThrowable.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2HID\S2Joypad.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2HID\S2Keyboard.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="s2HID\S2Mouse.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Simple2d" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="s2Audio\S2NullAudio.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="s2Base\sClock\SHighPrecClock.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="s2Base\sDispatch\SDispatcher.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="s2Base\sDispatch\SEvent.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="s2Base\sDispatch\SEventFlag.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="s2Base\sDispatch\SEventListener.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="s2Base\sMath\SMath.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="s2Base\sMemory\SAutoReleasePool.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="s2Base\sMemory\SAutoReleasePoolManager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="s2Base\sMemory\SPoolManager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="s2Base\sMemory\SReference.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="s2Base\sParse\SMD5.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="s2Base\sSchedule\SScheduler.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="s2Base\sSchedule\STimer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="s2Base\sSchedule\STimerManager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="s2Base\sThread\SThread.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="s2Core\S2Node.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="s2Core\S2Object.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="s2Event\S2CommandEvent.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="s2Event\S2CommandEventListener.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="s2Event\S2CustomEvent.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="s2Event\S2CustomEventListener.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="s2Event\S2EventTable.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="s2Event\S2EventUtil.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="s2Event\S2MouseEvent.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="s2Event\S2MouseEventListener.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="s2Platform\Win32\API\Clock\S2FrequencyClock.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="s2Platform\Win32\Application\S2Window.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="s2Platform\Win32\Audio\S2MCIAudio.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="s2Render\S2Device.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="s2Render\S2Effect.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="s2Render\S2Font.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="s2Render\S2Graphics.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="s2Render\S2Painter.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="s2Render\S2Renderer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="s2Render\S2Shader.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="s2Render\S2StencilBuffer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="s2Render\S2Texture.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="s2Render\S2TexturePool.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="s2Render\S2View.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="s2Scene\Action\S2Action.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="s2Scene\Action\S2ActionInstant.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="s2Scene\Action\S2ActionInterval.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="s2Scene\Action\S2ActionRepeat.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="s2Scene\Action\S2Animate.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="s2Scene\Action\S2FiniteTimeAction.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="s2Scene\Action\S2ForeverAction.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="s2Scene\Action\S2MoveTo.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="s2Scene\Action\S2SequenceAction.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="s2Scene\S2Camera.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="s2Scene\S2Director.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="s2Scene\S2Scene.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="s2Scene\S2SceneNode.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="s2Scene\S2Sprite.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="s2Scene\S2SpriteAnimation.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="s2Scene\S2SpriteFrame.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="s2Scene\S2SpriteFrameCache.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="s2Scene\S2TextureCache.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="s2Base\sParse\SHash.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="s2Platform\Win32\Render\DX9\S2DXAlgebraOperation.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="s2Base\sLang\SValue.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="s2Base\sLang\SWrapper.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="s2Base\sLang\SConverer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="s2Engine\S2Application.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="s2Render\S2RenderSystem.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="s2Audio\S2AudioSystem.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="s2Base\sParse\SUID.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="s2Engine\S2Engine.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="s2Engine\S2SteadyFramePulser.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="s2Engine\S2AlgebraOperation.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="s2Util\SXDXUtil.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="s2Util\S2DebugUtil.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="s2Platform\Win32\HID\S2D3DKeyboard.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="s2Platform\Win32\HID\S2D3DMouse.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="s2Platform\Win32\HID\S2WinKeyboard.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="s2Platform\Win32\HID\S2WinMouse.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="s2Platform\Win32\HID\S2D3DJoypad.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="s2HID\S2Joypad.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="s2HID\S2Keyboard.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="s2HID\S2Mouse.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
